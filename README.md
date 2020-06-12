@@ -4,3 +4,12 @@ Global warming is the ongoing rise of the average temperature of the Earth's cli
 
 
 Thanks to University of Dayton, the dataset is available as separate txt files for each city here. The data is available for research and non-commercial purposes only.. Please refer to this page for license.
+
+
+## Inspiration
+
+Some ideas are:
+
+1) How is the average temperature of the world changing over time?
+
+2) How global warming has affected the major cities worldwide over time.
