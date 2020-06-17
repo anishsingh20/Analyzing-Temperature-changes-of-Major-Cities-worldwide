@@ -13,3 +13,7 @@ Some ideas are:
 1) How is the average temperature of the world changing over time?
 
 2) How global warming has affected the major cities worldwide over time.
+
+
+KAGGLE link to the dataset: 
+https://www.kaggle.com/sudalairajkumar/daily-temperature-of-major-cities
