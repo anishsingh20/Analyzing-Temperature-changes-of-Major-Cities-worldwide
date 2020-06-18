@@ -5,9 +5,9 @@ require(dplyr)
 install.packages("weathermetrics")
 require(weathermetrics)
 
-temp_df <- read.csv("city_temperature.csv")
+require(highcharter)
 
-$Avg_temp <- fahrenheit.to.celsius(india_df$Avg_temp,round = 2)
+temp_df <- read.csv("city_temperature.csv")
 
 summary(temp_df)
 
@@ -61,9 +61,27 @@ hottest_bombay <- temp_df %>%
 hottest_bombay$Max_temp <- fahrenheit.to.celsius(hottest_bombay$Max_temp,round = 2)
 
 
-hottest_delhi <- india_df %>% 
+hottest_delhi <- temp_df %>% 
   filter(City=="Delhi") %>% 
   group_by(Month,Year) %>% 
 summarise(Max_temp = max(AvgTemperature))
 
 hottest_delhi$Max_temp <- fahrenheit.to.celsius(hottest_delhi$Max_temp,round = 2)
+
+
+hottest_chennai <- temp_df %>% 
+  filter(City=="Chennai (Madras)") %>% 
+  group_by(Month,Year) %>% 
+  summarise(Max_temp = max(AvgTemperature))
+
+hottest_chennai$Max_temp <- fahrenheit.to.celsius(hottest_chennai$Max_temp,round = 2)
+
+hottest_kolkata <- temp_df %>% 
+  filter(City=="Calcutta") %>% 
+  group_by(Month,Year) %>% 
+  summarise(Max_temp = max(AvgTemperature))
+
+hottest_kolkata$Max_temp <- fahrenheit.to.celsius(hottest_kolkata$Max_temp,round = 2)
+
+
+
