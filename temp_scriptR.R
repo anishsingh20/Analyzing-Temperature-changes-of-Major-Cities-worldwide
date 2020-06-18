@@ -34,12 +34,21 @@ india_annual <- india_df %>%
   summarise(Avg_temp = mean(Avg_temp))
   
   
-Bombay_df
+Bombay_df <- india_annual %>% 
+  filter(City=="Bombay (Mumbai)")
 
-Delhi_df
+Delhi_df <- india_annual %>% 
+  filter(City=="Delhi")
 
-Chennai_df
 
-Kolkata_df <-
+Chennai_df <- india_annual %>% 
+  filter(City=="Chennai (Madras)")
+
+
+Kolkata_df <- india_annual %>% 
+  filter(City=="Calcutta")
+
+
+
 
 
