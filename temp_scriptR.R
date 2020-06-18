@@ -27,6 +27,19 @@ india_df$Avg_temp <- fahrenheit.to.celsius(india_df$Avg_temp,round = 2)
 
 
   
-#India's major cities averaged temperature for months
+#India's major cities averaged annual temperature for years
+
+india_annual <- india_df %>% 
+  group_by(Year,City) %>% 
+  summarise(Avg_temp = mean(Avg_temp))
+  
+  
+Bombay_df
+
+Delhi_df
+
+Chennai_df
+
+Kolkata_df <-
 
 
